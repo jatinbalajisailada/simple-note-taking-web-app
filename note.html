@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="note.css">
+
+</head>
+<body>
+
+  <div class="noteTaking">
+    <div class="heading">Simple Note Taking App</div>
+    <div class="noteInput">
+      <input type="text" id="noteTitle" placeholder="Title">
+      <textarea id="noteContent" placeholder="Take a note..." required></textarea>
+      <button onclick="addNote()">Add Note</button>
+    </div>
+  </div>
+
+  <div class="notes">
+    <div class="searchBar">
+      <input type="text" id="search" placeholder="Search by title..." oninput="searchNotes()">
+    </div>
+  </div>
+
+    <div id="notesContainer">
+      <!--saved notes are displyed in this container-->
+    </div>
+
+  <div class="notes">
+    <div class="pagination">
+      <button onclick="prevPage()">Prev</button>
+      <span id="pageInfo"></span>
+      <button onclick="nextPage()">Next</button>
+    </div>
+  </div>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <textarea id="editTextarea"></textarea>
+      <button onclick="saveEditedNote()">Save</button>
+      <button onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+
+
+  <script src="note.js"></script>
+</body>
+</html>
