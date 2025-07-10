@@ -52,8 +52,8 @@ To run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/note-app.git
-   cd note-app
+   git clone https://github.com/jatinbalajisailada/simple-note-taking-web-app
+   cd simple-note-taking-web-app
 2. Open ntoe.html in your browser
 
 That's it! The app runs entirely in the browser and doesn't require a backend.
